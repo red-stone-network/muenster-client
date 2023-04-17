@@ -32,7 +32,7 @@ COPY --from=builder /busybox/_install/bin/busybox /
 
 # Use our non-root user
 USER static
-WORKDIR /home/
+WORKDIR /home/static
 
 # Uploads a blank default httpd.conf
 # This is only needed in order to set the `-c` argument in this base file
