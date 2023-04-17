@@ -22,6 +22,5 @@
   <a href="https://render.com/deploy?repo=https://github.com/red-stone-network/muenster-client/">
   <img src="https://render.com/images/deploy-to-render-button.svg">
   </a><br>
-  Muenster can also be hosted on Back4App, Vercel, and Stormkit.<br>
-  It can be hosted as a regular old static site, or using the Dockerfile included.
+  Muenster can also be hosted on Back4App, Vercel, and Stormkit.
 </p>
