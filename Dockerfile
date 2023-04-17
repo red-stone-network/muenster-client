@@ -42,8 +42,8 @@ COPY httpd.conf .
 
 # Copy the static website
 # Use the .dockerignore file to control what ends up inside the image!
-# NOTE: Commented out since this will also copy the .config file
-# COPY . .
+# NOTE: Originally commented out since this will also copy the .config file
+COPY . .
 
 # Run busybox httpd
 CMD ["/busybox", "httpd", "-f", "-v", "-p", "3000", "-c", "httpd.conf"]
