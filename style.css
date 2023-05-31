@@ -453,8 +453,8 @@ code {
 
 pre {
   background-color: #444;
-  padding: 2px 5px;
-  display: inline-block;
+  padding: 0 4px;
+  display: inline;
   border-radius: 3px;
 }
 
