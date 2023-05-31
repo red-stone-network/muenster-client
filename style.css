@@ -444,6 +444,20 @@ a.fuckingbox:hover > img {
   visibility: visible;
 }
 
+code {
+  background-color: #444;
+  padding: 2px 5px;
+  display: block;
+  border-radius: 3px;
+}
+
+pre {
+  background-color: #444;
+  padding: 2px 5px;
+  display: inline-block;
+  border-radius: 3px;
+}
+
 * {
   scrollbar-width: auto;
   scrollbar-color: #454545 #292929;
