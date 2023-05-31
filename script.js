@@ -362,7 +362,7 @@ function existsFile(url) {
   }
 }
 
-function createMessageElement(user, mess, channel) {
+function createMessageElement(user, mess, channel, id) {
   if (mess == " ERROR NOT LOGGED IN ") {
     errorOut("notLoggedIn");
   } else if (mess == " ERROR ON COOLDOWN ") {
@@ -625,7 +625,7 @@ $("#profileupload").change(function() {
 });
 
 socket.on("send message", function(data) {
-  createMessageElement(data.username, data.message, data.channel);
+  createMessageElement(data.username, data.message, data.channel, data.id);
 });
 
 var onlineUsers;
