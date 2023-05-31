@@ -1,6 +1,6 @@
 const socket = io(decodeCW("ILOVEBANABA(V1.0.0)#l13#l21#l05#l14#l19#l20#l05#l18#l03#l08#l01#l20#bs13#l07#l12#l09#l20#l03#l08#bs13#l13#l05"));
 
-const version = "2.8.3";
+const version = "2.8.4";
 
 var colorPicker = new iro.ColorPicker("#picker", {
   // Set the size of the color picker
