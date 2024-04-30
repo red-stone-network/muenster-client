@@ -159,7 +159,7 @@ function createDMs(user, origin) {
     '"><div class="message sysmsg">This is the start of your conversation with ' +
     user.split("|")[1] +
     ".</div></div>";
-  document.getElementById("dms").append(div);
+  document.getElementById("dms").innerHTML += div;
   var btn =
     '<input type="button" class="button2" value="' +
     origin +
@@ -168,7 +168,7 @@ function createDMs(user, origin) {
     '`);" style="width: 240px; color: ' +
     getUsernameColor(origin) +
     ';"><br>';
-  document.getElementById("dm-list").append(btn);
+  document.getElementById("dm-list").innerHTML += btn;
   createSysMessageElement(
     'A new conversation with <span style="color: ' +
     getUsernameColor(origin) +
@@ -407,7 +407,7 @@ function createMessageElement(user, mess, channel, id) {
               createDMs(channel, "other");
             }
             setChannel(oldChannel);
-            document.getElementById("dms_" + channel).append(html);
+            document.getElementById("dms_" + channel).innerHTML += html;
             setTimeout(() => {
               document
                 .getElementById("dms_" + channel)
@@ -422,7 +422,7 @@ function createMessageElement(user, mess, channel, id) {
             audio.play();
           }
         } else {
-          document.getElementById("chat_" + channel).append(html);
+          document.getElementById("chat_" + channel).innerHTML += html;
           setTimeout(() => {
             document
               .getElementById("chat_" + channel)
@@ -479,7 +479,7 @@ function createMessageElement(user, mess, channel, id) {
 
 function createSysMessageElement(mess) {
   var html = '<div class="message sysmsg">' + mess + "</div>";
-  document.getElementById("chat__main").append(html);
+  document.getElementById("chat__main").innerHTML += html;
   document
     .getElementById("chat__main")
     .scrollTo(0, document.getElementById("chat__main").scrollHeight);
